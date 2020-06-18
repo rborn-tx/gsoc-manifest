@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="base/integration.xml" />
+  <include name="bsp/integration-nxp.xml" />
+  <include name="bsp/integration-tdx.xml" />
+
+  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="master"/>
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="master">
+    <copyfile dest="export" src="buildconf/export"/>
+  </project>
+</manifest>
