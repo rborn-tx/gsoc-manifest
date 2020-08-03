@@ -8,10 +8,10 @@
   <remote fetch="https://github.com/toradex" name="toradex-torizon"/>
   <remote fetch="https://github.com/foundriesio" name="foundriesio"/>
 
-  <project name="meta-lmp" path="layers/meta-lmp" remote="foundriesio" revision="ec9dddf5e22106af948cea3a51f509fa5905e5e2"/>
-  <project name="meta-security" path="layers/meta-security" remote="yocto" revision="4dc69a75502cb8f184b003e13117999f136b7899"/>
-  <project name="meta-updater" path="layers/meta-updater" remote="ats" revision="5f7f0d139b3c81e163ad46d366cf1d843c3cb793"/>
-  <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="ee94ad466cc3ffbf214a00a6a9aaad6d8ff68794"/>
+  <project name="meta-lmp" path="layers/meta-lmp" remote="foundriesio" revision="b553f81e5064d261739c555bda6ae278b3142649"/>
+  <project name="meta-security" path="layers/meta-security" remote="yocto" revision="fcceba2208fa7cf63d5841a6a1a3ff743b4cb35d"/>
+  <project name="meta-updater" path="layers/meta-updater" remote="ats" revision="b95d0d80624deecc54e0b99d054b8f58bfc0a588"/>
+  <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="0db3901a48426ee403a045e0b626416c5fa93c6f"/>
   <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="master"/>
   <project name="meta-toradex-torizon" path="layers/meta-toradex-torizon" remote="toradex-torizon" revision="master">
     <linkfile dest="setup-environment" src="scripts/setup-environment"/>
