@@ -6,9 +6,9 @@
   <include name="bsp/pinned-nxp.xml" />
   <include name="bsp/pinned-tdx.xml" />
 
-  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="5144a99a696a8a72c0765ea0e8be8ceafaa78f85" upstream="master"/>
-  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="bdfeb84dbe21cb614fb5db4347335ab26d81244b" upstream="master"/>
-  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="950ad2a54b87d56d938e615634c2e4079b386fca" upstream="master">
+  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="8d5672cc6ca327576a814d35dfb5d59ab24043cb" upstream="master"/>
+  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="b5780b86c777a6627f74de8e6de5698d2491b1ce" upstream="master"/>
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="3ac9d557e46037a70a062df873ea2f3fea33f195" upstream="master">
     <copyfile dest="export" src="buildconf/export"/>
   </project>
 </manifest>
