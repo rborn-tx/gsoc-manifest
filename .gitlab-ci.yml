@@ -33,6 +33,12 @@ repo-sync:
     - ../bin/repo sync
     - ../bin/repo init -u $ORIGIN -b $CI_COMMIT_BRANCH -m tdxref/next.xml
     - ../bin/repo sync
+    - ../bin/repo init -u $ORIGIN -b $CI_COMMIT_BRANCH -m tester/default.xml
+    - ../bin/repo sync
+    - ../bin/repo init -u $ORIGIN -b $CI_COMMIT_BRANCH -m tester/integration.xml
+    - ../bin/repo sync
+    - ../bin/repo init -u $ORIGIN -b $CI_COMMIT_BRANCH -m tester/next.xml
+    - ../bin/repo sync
     - ../bin/repo init -u $ORIGIN -b $CI_COMMIT_BRANCH -m tezi/default.xml
     - ../bin/repo sync
     - ../bin/repo init -u $ORIGIN -b $CI_COMMIT_BRANCH -m tezi/integration.xml

@@ -6,6 +6,9 @@ the different git repositories and the used versions.
 
 This manifest allows setting up TorizonCore or Toradex Reference Images.
 
+For our internal use it also allows to setup OE for the Toradex Easy Installer and
+our internal Tester.
+
 ## Getting Started and Documentation TorizonCore
 
 - [Step-by-step Getting Started Guide](https://developer.toradex.com/getting-started)
