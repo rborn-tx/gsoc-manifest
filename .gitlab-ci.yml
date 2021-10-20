@@ -1,7 +1,7 @@
 variables:
 # uncomment for the pipeline debug purpose
 # CI_DEBUG_TRACE: "true"
-  CI_IMAGE: gitlab.int.toradex.com:4567/oleksandr.suvorov/ci-toolchain-container:linux-kernel-builder
+  CI_IMAGE: gitlab.int.toradex.com:4567/rd/linux-bsp/ci-toolchain-container:linux-toradex_aarch32_arm_builder-bb6f84e
   DOCKER_HOST: tcp://docker:2375
   DOCKER_DRIVER: overlay2
   DOCKER_TLS_CERTDIR: ""
@@ -21,11 +21,12 @@ repo-sync:
     GIT_STRATEGY: clone
   script:
     - ORIGIN=$(git remote get-url origin)
-    - mkdir -p ../bin
-    - wget -O ../bin/repo https://commondatastorage.googleapis.com/git-repo-downloads/repo
-    - chmod a+x ../bin/repo
-    - mkdir -p ../workspace
-    - cd ../workspace
+    - mkdir -p bin
+    - wget -O bin/repo https://commondatastorage.googleapis.com/git-repo-downloads/repo
+    - sed -i 's/\(\#\!\/usr\/bin\/env \)python/\1python3/' bin/repo
+    - chmod a+x bin/repo
+    - mkdir -p workspace
+    - cd workspace
     - ../bin/repo init -u $ORIGIN -b $CI_COMMIT_BRANCH -m tdxref/default.xml
     - ../bin/repo sync
     - ../bin/repo init -u $ORIGIN -b $CI_COMMIT_BRANCH -m tdxref/integration.xml
