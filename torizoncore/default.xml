@@ -4,11 +4,9 @@
   <include name="bsp/pinned-nxp.xml" />
   <include name="bsp/pinned-tdx.xml" />
 
-  <remote fetch="https://github.com/advancedtelematic" name="ats"/>
-  <remote fetch="https://github.com/toradex" name="toradex-torizon"/>
-  <remote fetch="https://github.com/foundriesio" name="foundriesio"/>
+  <remote alias="repo" fetch="https://github.com/advancedtelematic" name="ats"/>
+  <remote alias="repo" fetch="https://github.com/toradex" name="toradex-torizon"/>
 
-  <project name="meta-lmp" path="layers/meta-lmp" remote="foundriesio" revision="b553f81e5064d261739c555bda6ae278b3142649"/>
   <project name="meta-security" path="layers/meta-security" remote="yocto" revision="fcceba2208fa7cf63d5841a6a1a3ff743b4cb35d"/>
   <project name="meta-updater" path="layers/meta-updater" remote="ats" revision="b95d0d80624deecc54e0b99d054b8f58bfc0a588"/>
   <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="0db3901a48426ee403a045e0b626416c5fa93c6f"/>
