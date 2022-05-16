@@ -4,11 +4,11 @@
   <include name="bsp/pinned-nxp.xml"/>
   <include name="bsp/integration-tdx.xml"/>
 
-  <remote alias="repo" fetch="https://github.com/advancedtelematic" name="ats"/>
+  <remote alias="repo" fetch="https://github.com/uptane" name="uptane"/>
   <remote alias="repo" fetch="https://github.com/toradex" name="toradex-torizon"/>
 
   <project name="meta-security" path="layers/meta-security" remote="yocto" revision="93f2146211001ee3cf697d8428969cc3069ed6ba"/>
-  <project name="meta-updater" path="layers/meta-updater" remote="ats" revision="150a5f42169def91b3938f78f63170e2d0fefdcc"/>
+  <project name="meta-updater" path="layers/meta-updater" remote="uptane" revision="d3d04674cca2b56f97870b0b68bf6e409ebb10fa"/>
   <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="21a5c29a10f033859f6e44aa035161befa439128"/>
   <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="master"/>
   <project name="meta-toradex-torizon" path="layers/meta-toradex-torizon" remote="toradex-torizon" revision="master">
