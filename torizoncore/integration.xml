@@ -7,9 +7,9 @@
   <remote alias="repo" fetch="https://github.com/uptane" name="uptane"/>
   <remote alias="repo" fetch="https://github.com/toradex" name="toradex-torizon"/>
 
-  <project name="meta-security" path="layers/meta-security" remote="yocto" revision="93f2146211001ee3cf697d8428969cc3069ed6ba"/>
+  <project name="meta-security" path="layers/meta-security" remote="yocto" revision="d3d8e62bf1caa3870a504c0addcfd200b33c189f"/>
   <project name="meta-updater" path="layers/meta-updater" remote="uptane" revision="d3d04674cca2b56f97870b0b68bf6e409ebb10fa"/>
-  <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="21a5c29a10f033859f6e44aa035161befa439128"/>
+  <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="d577f45ac664c43cfff5cef01065b85980e5b7ee"/>
   <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="master"/>
   <project name="meta-toradex-torizon" path="layers/meta-toradex-torizon" remote="toradex-torizon" revision="master">
     <linkfile dest="setup-environment" src="scripts/setup-environment"/>
