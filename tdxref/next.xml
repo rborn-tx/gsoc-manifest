@@ -7,8 +7,8 @@
   <include name="bsp/integration-tdx.xml" />
 
   <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="kirkstone"/>
-  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="master"/>
-  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="master">
+  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="kirkstone-6.x.y"/>
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="kirkstone-6.x.y">
     <copyfile dest="export" src="buildconf/export"/>
   </project>
 </manifest>
