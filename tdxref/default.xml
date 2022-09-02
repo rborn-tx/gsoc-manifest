@@ -2,13 +2,13 @@
 <manifest>
   <remote alias="repo" fetch="https://github.com/meta-qt5" name="githq"/>
 
-  <include name="base/pinned.xml" />
-  <include name="bsp/pinned-nxp.xml" />
-  <include name="bsp/pinned-tdx.xml" />
+  <include name="base/pinned.xml"/>
+  <include name="bsp/pinned-nxp.xml"/>
+  <include name="bsp/pinned-tdx.xml"/>
 
   <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="5b71df60e523423b9df6793de9387f87a149ac42" upstream="kirkstone"/>
-  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="e8a4b5e7d775dc916cd8d43e71b56932195d0c34" upstream="kirkstone-6.x.y"/>
-  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="2d89226a37d252392f19c6718dd9451f364ccf5c" upstream="kirkstone-6.x.y">
+  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="6cbe18653ab705592671001daab88a7c58c81a69" upstream="kirkstone-6.x.y"/>
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="095032507d6560ff6bb916982732a2190019b97f" upstream="kirkstone-6.x.y">
     <copyfile dest="export" src="buildconf/export"/>
   </project>
 </manifest>
