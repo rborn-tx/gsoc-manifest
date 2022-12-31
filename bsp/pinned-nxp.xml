@@ -2,7 +2,7 @@
 <manifest>
   <remote alias="repo" fetch="https://github.com/Freescale" name="githf"/>
 
-  <project name="meta-freescale-3rdparty.git" path="layers/meta-freescale-3rdparty" remote="githf" revision="e1ec96f0b1d89adab9ec1f224e7d6dcb0ef565c0" upstream="kirkstone"/>
+  <project name="meta-freescale-3rdparty.git" path="layers/meta-freescale-3rdparty" remote="githf" revision="2c48a30847dc0f4a3a1505c462387578ea49065f" upstream="kirkstone"/>
   <project name="meta-freescale-distro.git" path="layers/meta-freescale-distro" remote="githf" revision="d5bbb487b2816dfc74984a78b67f7361ce404253" upstream="kirkstone"/>
-  <project name="meta-freescale.git" path="layers/meta-freescale" remote="githf" revision="9b2a351c4f662d222ef7e5b8007f0d47c108f31f" upstream="kirkstone"/>
+  <project name="meta-freescale.git" path="layers/meta-freescale" remote="githf" revision="bef0618a2b9727880e62944395ea771dded431c8" upstream="kirkstone"/>
 </manifest>
