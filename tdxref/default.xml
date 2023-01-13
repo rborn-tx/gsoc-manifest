@@ -4,6 +4,7 @@
 
   <include name="base/pinned.xml" />
   <include name="bsp/pinned-nxp.xml" />
+  <include name="bsp/pinned-ti.xml"/>
   <include name="bsp/pinned-tdx.xml" />
 
   <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="1d1b19ff577835bf847152eed44d52e8267d9093" upstream="master"/>

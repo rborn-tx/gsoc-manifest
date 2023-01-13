@@ -2,6 +2,7 @@
 <manifest>
   <include name="base/pinned.xml"/>
   <include name="bsp/pinned-nxp.xml"/>
+  <include name="bsp/pinned-ti.xml"/>
   <include name="bsp/integration-tdx.xml"/>
 
   <remote alias="repo" fetch="https://github.com/uptane" name="uptane"/>

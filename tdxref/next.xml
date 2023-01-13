@@ -4,6 +4,7 @@
 
   <include name="base/integration.xml" />
   <include name="bsp/integration-nxp.xml" />
+  <include name="bsp/integration-ti.xml" />
   <include name="bsp/integration-tdx.xml" />
 
   <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="master"/>
