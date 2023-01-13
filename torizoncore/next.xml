@@ -2,6 +2,7 @@
 <manifest>
   <include name="base/integration.xml" />
   <include name="bsp/integration-nxp.xml" />
+  <include name="bsp/integration-ti.xml" />
   <include name="bsp/integration-tdx.xml" />
 
   <remote alias="repo" fetch="https://github.com/uptane" name="uptane"/>
