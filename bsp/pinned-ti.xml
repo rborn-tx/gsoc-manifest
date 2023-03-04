@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="meta-arm" path="layers/meta-arm" remote="yocto" revision="904f8e82c2772986fad500af4f72f5211a7ff831" upstream="kirkstone"/>
-  <project name="meta-ti" path="layers/meta-ti" remote="yocto" revision="2a5a0339d5bd28d6f6aedaf02a6aaa9b73a248e4" upstream="kirkstone"/>
+  <project name="meta-arm" path="layers/meta-arm" remote="yocto" revision="96aad3b29aa7a5ee4df5cf617a6336e5218fa9bd" upstream="kirkstone"/>
+  <project name="meta-ti" path="layers/meta-ti" remote="yocto" revision="6fa3a588b7a1250a756c06e94fe6fdd28a57a8a6" upstream="kirkstone"/>
 </manifest>
