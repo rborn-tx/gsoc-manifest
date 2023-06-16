@@ -16,4 +16,4 @@ our internal Tester.
 
 ## Getting Started and Documentation Reference Images
 
-- [OpenEmbedded (core)](https://developer.toradex.com/knowledge-base/board-support-package/openembedded-(core))
+- [OpenEmbedded (core)](https://developer.toradex.com/linux-bsp/os-development/build-yocto/build-a-reference-image-with-yocto-projectopenembedded/)
