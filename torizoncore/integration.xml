@@ -8,9 +8,9 @@
   <remote alias="repo" fetch="https://github.com/uptane" name="uptane"/>
   <remote alias="repo" fetch="https://github.com/toradex" name="toradex-torizon"/>
 
-  <project name="meta-security" path="layers/meta-security" remote="yocto" revision="cc20e2af2ae1c74e306f6c039c4963457c4cbd0f"/>
-  <project name="meta-updater" path="layers/meta-updater" remote="uptane" revision="be1217764c926e46acdaf9e8d1fa6404090723f5"/>
-  <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="9d056f957b42e31f1c2c5bad0af1ab6c84b53ee6"/>
+  <project name="meta-security" path="layers/meta-security" remote="yocto" revision="d398cc6ea6716afd3a3a6e88ad8fbdc89510ef23"/>
+  <project name="meta-updater" path="layers/meta-updater" remote="uptane" revision="30215ccd7df914d3ec577ac5c11c7a4dc777634a"/>
+  <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="b3b3dbc67504e8cd498d6db202ddcf5a9dd26a9d"/>
   <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="kirkstone-6.x.y"/>
   <project name="meta-toradex-security" path="layers/meta-toradex-security" remote="toradex-torizon" revision="kirkstone-6.x.y"/>
   <project name="meta-toradex-torizon" path="layers/meta-toradex-torizon" remote="toradex-torizon" revision="kirkstone-6.x.y">
