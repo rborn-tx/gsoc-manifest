@@ -9,16 +9,12 @@
   <remote alias="repo" fetch="https://github.com/toradex" name="githt"/>
   <remote alias="repo" fetch="https://gitlab.int.toradex.com/rd/testing/som-fct" name="tdx-int"/>
 
-  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="5ef3a0ffd3324937252790266e2b2e64d33ef34f" upstream="dunfell"/>
-  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="8ffadb517be04a0b19ef1f5d5299a8c581f87383" upstream="dunfell-5.x.y"/>
-  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="53f241006b8cf69c31c22ce27e837261156ddae8" upstream="dunfell-5.x.y"/>
-  <project dest-branch="dunfell-5.x.y" name="meta-toradex-tezi.git" path="layers/meta-toradex-tezi" remote="githt" revision="36db0dacbab58bd2ca2a228ec51edf2ad1b13269" upstream="dunfell-5.x.y"/>
+  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="bff5bd937f0776166e81a63f3dd39ede348ef758" upstream="kirkstone"/>
+  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="4860e75022c791cc7157a8ebf7e30befe5c0cc75" upstream="kirkstone-6.x.y"/>
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="50942e30e5d81e3894fd4db3d8b79e2cb53d2a9b" upstream="kirkstone-6.x.y"/>
+  <project dest-branch="kirkstone-6.x.y" name="meta-toradex-tezi.git" path="layers/meta-toradex-tezi" remote="githt" revision="0f6486b7d74b8ffac6f1d31a7cecb6957436ed9d" upstream="kirkstone-6.x.y"/>
 
-  <project name="meta-toradex-somfctdut.git" path="layers/meta-toradex-somfctdut" remote="tdx-int" revision="37758ed98161bb0e7871086db16aa9e525fc1c63" upstream="dunfell-5.x.y">
+  <project name="meta-toradex-somfctdut.git" path="layers/meta-toradex-somfctdut" remote="tdx-int" revision="495ec71ae6707c885021cafd8230002bb642e1a6" upstream="kirkstone-6.x.y">
     <copyfile dest="export_somfctdut" src="buildconf/export"/>
-  </project>
-
-  <project name="meta-toradex-somfctcm.git" path="layers/meta-toradex-somfctcm" remote="tdx-int" revision="bdb6fdab9d77a7dd9ab71afefd372f5b7ce69bb7" upstream="dunfell-5.x.y">
-    <copyfile dest="export_somfctcm" src="buildconf/export"/>
   </project>
 </manifest>

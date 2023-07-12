@@ -9,16 +9,12 @@
   <remote alias="repo" fetch="https://github.com/toradex" name="githt"/>
   <remote alias="repo" fetch="https://gitlab.int.toradex.com/rd/testing/som-fct" name="tdx-int"/>
 
-  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="dunfell"/>
-  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="dunfell-5.x.y"/>
-  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="dunfell-5.x.y"/>
-  <project name="meta-toradex-tezi.git" path="layers/meta-toradex-tezi" remote="githt" revision="dunfell-5.x.y"/>
+  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="kirkstone"/>
+  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="kirkstone-6.x.y"/>
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="kirkstone-6.x.y"/>
+  <project name="meta-toradex-tezi.git" path="layers/meta-toradex-tezi" remote="githt" revision="kirkstone-6.x.y"/>
 
-  <project name="meta-toradex-somfctdut.git" path="layers/meta-toradex-somfctdut" remote="tdx-int" revision="dunfell-5.x.y">
+  <project name="meta-toradex-somfctdut.git" path="layers/meta-toradex-somfctdut" remote="tdx-int" revision="kirkstone-6.x.y">
     <copyfile dest="export_somfctdut" src="buildconf/export"/>
-  </project>
-
-  <project name="meta-toradex-somfctcm.git" path="layers/meta-toradex-somfctcm" remote="tdx-int" revision="dunfell-5.x.y">
-    <copyfile dest="export_somfctcm" src="buildconf/export"/>
   </project>
 </manifest>
