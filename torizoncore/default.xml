@@ -8,12 +8,12 @@
   <remote alias="repo" fetch="https://github.com/uptane" name="uptane"/>
   <remote alias="repo" fetch="https://github.com/toradex" name="toradex-torizon"/>
 
-  <project name="meta-security" path="layers/meta-security" remote="yocto" revision="d398cc6ea6716afd3a3a6e88ad8fbdc89510ef23"/>
+  <project name="meta-security" path="layers/meta-security" remote="yocto" revision="06c240c3c235fa06fe724e278d53463ac67cc26b"/>
   <project name="meta-updater" path="layers/meta-updater" remote="uptane" revision="9f7fe77932671751f3c7201d164ffbabd0cb2faf"/>
-  <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="b3b3dbc67504e8cd498d6db202ddcf5a9dd26a9d"/>
-  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="34b8e4bbf4b4f0968fbdd9f5da9b5e0f0015e650"/>
-  <project name="meta-toradex-security" path="layers/meta-toradex-security" remote="toradex-torizon" revision="ec01a992e809c58cb3cf2d303e07d73a6bdafa76"/>
-  <project name="meta-toradex-torizon" path="layers/meta-toradex-torizon" remote="toradex-torizon" revision="a994c254aae09d7ed52ccb55e638485271e4035b">
+  <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="e60f59f3567b78286ea34337dbae468a5f18f1c6"/>
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="491e249099a36c2eb7f8c0192f100265c1eae0b1"/>
+  <project name="meta-toradex-security" path="layers/meta-toradex-security" remote="toradex-torizon" revision="aceab24a2d55e17d07da63ecbaeadabe95f2796a"/>
+  <project name="meta-toradex-torizon" path="layers/meta-toradex-torizon" remote="toradex-torizon" revision="79091602699569d24d4ad2257838c3498b9f5663">
     <linkfile dest="setup-environment" src="scripts/setup-environment"/>
   </project>
 </manifest>
