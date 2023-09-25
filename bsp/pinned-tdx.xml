@@ -3,5 +3,5 @@
   <remote alias="repo" fetch="https://git.toradex.com" name="tdx"/>
   <project name="meta-toradex-bsp-common.git" path="layers/meta-toradex-bsp-common" remote="tdx" revision="351d72f3c0b3ac5b13ad438b33ff3e5019e70d64" upstream="master"/>
   <project name="meta-toradex-nxp.git" path="layers/meta-toradex-nxp" remote="tdx" revision="5ee28ba98d0b69666c6a66fd36516e31a26a73a7" upstream="master"/>
-  <project name="meta-toradex-ti.git" path="layers/meta-toradex-ti" remote="tdx" revision="96ba7e7074d7b0f363095726b6a93acc71cbeffa" upstream="kirkstone-6.x.y"/>
+  <project name="meta-toradex-ti.git" path="layers/meta-toradex-ti" remote="tdx" revision="758654bc4cc20243f47e31aab9e4351911da745f" upstream="master"/>
 </manifest>
