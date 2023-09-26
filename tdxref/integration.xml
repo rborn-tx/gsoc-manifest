@@ -7,7 +7,7 @@
   <include name="bsp/pinned-ti.xml"/>
   <include name="bsp/integration-tdx.xml"/>
 
-  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="31930afca79b74e0c788452d71356c1f045e7979" upstream="kirkstone"/>
+  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="ae8a97f79364bed1abc297636f7933d0e35f22be" upstream="kirkstone"/>
   <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="kirkstone-6.x.y"/>
   <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="kirkstone-6.x.y">
     <copyfile dest="export" src="buildconf/export"/>
