@@ -12,6 +12,7 @@
   <project name="meta-updater" path="layers/meta-updater" remote="uptane" revision="395624cf908078cbaa725aef44d1c1bc94d17218"/>
   <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="31954471605ae3b41627a0ab7b0dcfe8c5851bd7"/>
   <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="master"/>
+  <project name="meta-toradex-security" path="layers/meta-toradex-security" remote="toradex-torizon" revision="main"/>
   <project name="meta-toradex-torizon" path="layers/meta-toradex-torizon" remote="toradex-torizon" revision="master">
     <linkfile dest="setup-environment" src="scripts/setup-environment"/>
   </project>
