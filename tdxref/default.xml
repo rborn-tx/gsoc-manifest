@@ -8,6 +8,7 @@
   <include name="bsp/pinned-tdx.xml" />
 
   <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="1d1b19ff577835bf847152eed44d52e8267d9093" upstream="master"/>
+  <project name="meta-security" path="layers/meta-security" remote="yocto" revision="070a1e82cc59424d230a23c0b2a104b01fbaa2ad" upstream="master"/>
   <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="5de0bb7014e1446c91a0e71010087c03ca494937" upstream="master"/>
   <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="c9bd57bd65a1bdc9c7a52e6084fc4eaff508dd5c" upstream="master">
     <copyfile dest="export" src="buildconf/export"/>
