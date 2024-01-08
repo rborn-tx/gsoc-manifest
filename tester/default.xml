@@ -12,7 +12,7 @@
   <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="ae8a97f79364bed1abc297636f7933d0e35f22be" upstream="kirkstone"/>
   <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="946425761f7aa044dd3721c0ef604490814be1aa" upstream="kirkstone-6.x.y"/>
 
-  <project name="meta-toradex-somfctdut.git" path="layers/meta-toradex-somfctdut" remote="tdx-int" revision="7805ca8d49e43ca609344a5a49072b57be47faea" upstream="kirkstone-6.x.y">
+  <project name="meta-toradex-somfctdut.git" path="layers/meta-toradex-somfctdut" remote="tdx-int" revision="52e188bfc84528b09ca3041a91458b1fa4bda099" upstream="kirkstone-6.x.y">
     <copyfile dest="export_somfctdut" src="buildconf/export"/>
   </project>
 </manifest>
