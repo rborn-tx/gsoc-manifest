@@ -23,7 +23,6 @@ repo-sync:
     - ORIGIN=$(git remote get-url origin)
     - mkdir -p bin
     - wget -O bin/repo https://commondatastorage.googleapis.com/git-repo-downloads/repo
-    - sed -i 's/\(\#\!\/usr\/bin\/env \)python/\1python3/' bin/repo
     - chmod a+x bin/repo
     - mkdir -p workspace
     - cd workspace
