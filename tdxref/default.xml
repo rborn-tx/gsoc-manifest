@@ -7,10 +7,10 @@
   <include name="bsp/pinned-ti.xml"/>
   <include name="bsp/pinned-tdx.xml" />
 
-  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="25d86278e4e8b277e9d3c88061c1a2268a20082a" upstream="master"/>
-  <project name="meta-security" path="layers/meta-security" remote="yocto" revision="b2e1511338705f90f34f19f938650c185200c067" upstream="master"/>
-  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="5de0bb7014e1446c91a0e71010087c03ca494937" upstream="master"/>
-  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="c9bd57bd65a1bdc9c7a52e6084fc4eaff508dd5c" upstream="master">
+  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="b8e1ae8ce6140f6084388842751280b55d55988b" upstream="master"/>
+  <project name="meta-security" path="layers/meta-security" remote="yocto" revision="283a773f24cedacb45def943a455bc3607f8a7a1" upstream="master"/>
+  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="266c29d50d7e80dd190f146e41cdef55adb6df53" upstream="master"/>
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="0ceda8300f359e74364d00c3877a6bd8ec7701eb" upstream="master">
     <copyfile dest="export" src="buildconf/export"/>
   </project>
 </manifest>
