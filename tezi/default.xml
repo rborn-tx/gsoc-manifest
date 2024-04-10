@@ -12,6 +12,6 @@
   <!-- meta-toradex-distro is used for bumpSRCREV -->
   <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="0ceda8300f359e74364d00c3877a6bd8ec7701eb" upstream="master"/>
   <project name="meta-toradex-tezi.git" path="layers/meta-toradex-tezi" remote="githt" revision="ffaaac602f33603bfc8e5a1fc88b73fa72c56b14" upstream="master">
-    <copyfile dest="export" src="buildconf/export"/>
+    <copyfile dest="export" src="conf/templates/default/export"/>
   </project>
 </manifest>
