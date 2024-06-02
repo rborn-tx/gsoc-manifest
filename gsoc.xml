@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="torizoncore/default.xml"/>
+
+  <remote alias="repo" fetch="https://github.com/rauc" name="rauc"/>
+  <remote alias="repo" fetch="https://github.com/sbabic" name="sbabic"/>
+  <remote alias="repo" fetch="https://github.com/drewmoseley" name="dmoseley"/>
+
+  <project name="meta-rauc.git" path="layers/meta-rauc" remote="rauc" revision="kirkstone"/>
+  <project name="meta-rauc-community.git" path="layers/meta-rauc-community" remote="dmoseley" revision="rauc-toradex-6.5.0"/>
+
+  <project name="meta-swupdate.git" path="layers/meta-swupdate" remote="sbabic" revision="kirkstone"/>
+  <project name="meta-swupdate-boards.git" path="layers/meta-swupdate-boards" remote="dmoseley" revision="swupdate-toradex-6.5.0"/>
+
+  <!-- replace meta-toradex-torizon -->
+  <remove-project name="meta-toradex-torizon"/>
+  <project name="meta-toradex-torizon" path="layers/meta-toradex-torizon" remote="dmoseley" revision="84513362b2a294da206f3f33e188cd8d438b41b2">
+    <linkfile dest="setup-environment" src="scripts/setup-environment"/>
+  </project>
+</manifest>
