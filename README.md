@@ -1,19 +1,30 @@
-# Toradex oe-core Setup
+This repository contains manifests for building [Torizon OS](https://developer.toradex.com/torizon/) (formerly TorizonCore) and Toradex Reference images.
+It was forked from https://git.toradex.com/cgit/toradex-manifest.git/ in order to make adaptations for the Google Summer of Code 2024, particularly to support the following projects:
 
-To simplify installation we provide a manifest for the repo tool which manages
-the different git repositories and the used versions.
-[more on repo](https://code.google.com/p/git-repo/)
+- [Uptane: Aktualizr Integration With SWUpdate](https://summerofcode.withgoogle.com/programs/2024/projects/qQntgfyx)
+- [Building support for an A/B partition scheme-based update for Uptane Client](https://summerofcode.withgoogle.com/programs/2024/projects/8r2exO5W)
 
-This manifest allows setting up TorizonCore or Toradex Reference Images.
+# Usage instructions
 
-For our internal use it also allows to setup OE for the Toradex Easy Installer and
-our internal Tester.
+- Install the Google repo tool:
+  ```
+  $ mkdir ~/bin
+  $ PATH=~/bin:$PATH
 
-## Getting Started and Documentation TorizonCore
+  $ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+  $ chmod a+x ~/bin/repo
+  ```
 
-- [Step-by-step Getting Started Guide](https://developer.toradex.com/getting-started)
-- [Torizon Software Page](https://developer.toradex.com/software/torizon)
+- Make sure your Git user name and e-mail are configured correctly:
+  ```
+  $ git config --global user.email "you@example.com"
+  $ git config --global user.name "Your Name"
+  ```
 
-## Getting Started and Documentation Reference Images
-
-- [OpenEmbedded (core)](https://developer.toradex.com/linux-bsp/os-development/build-yocto/build-a-reference-image-with-yocto-projectopenembedded/)
+- Check out the metadata for GSoC:
+  ```
+  $ mkdir gsoc-2024
+  $ cd gsoc-2024
+  $ repo init -u https://github.com/rborn-tx/gsoc-manifest -b gsoc-2024 -m gsoc.xml
+  $ repo sync -j8
+  ```
