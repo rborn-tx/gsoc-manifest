@@ -12,6 +12,7 @@
   <project name="meta-swupdate.git" path="layers/meta-swupdate" remote="sbabic" revision="kirkstone"/>
   <project name="meta-swupdate-boards.git" path="layers/meta-swupdate-boards" remote="rborn" revision="swupdate-toradex-6.5.0"/>
 
+  <project name="meta-gsoc-aktualizr.git" path="layers/meta-gsoc-aktualizr" remote="rborn" revision="gsoc-2024-tos-6.5.0"/>
   <project name="meta-gsoc-playground.git" path="layers/meta-gsoc-playground" remote="rborn" revision="gsoc-2024-tos-6.5.0"/>
 
   <!-- replace meta-toradex-torizon -->
