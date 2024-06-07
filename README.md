@@ -4,6 +4,7 @@ It was forked from https://git.toradex.com/cgit/toradex-manifest.git/ in order t
 - [Uptane: Aktualizr Integration With SWUpdate](https://summerofcode.withgoogle.com/programs/2024/projects/qQntgfyx)
 - [Building support for an A/B partition scheme-based update for Uptane Client](https://summerofcode.withgoogle.com/programs/2024/projects/8r2exO5W)
 
+
 # Usage
 
 Basic steps:
@@ -102,6 +103,9 @@ The steps are detailed in the following items.
     #
 	```
 
+- **SWUpdate** specific:
+  - No further steps are stricly required but one should be able to generate certificates and keys and use them to sign the image if needed (see the SWUpdate references at the end of this page).
+
 ## Build OS image
 
 - Whenever you want to build an OS image:
@@ -126,12 +130,19 @@ The steps are detailed in the following items.
 	```
     the second entry above is just a symbolic link to the first one (the actual image as a Toradex Easy Installer tarball).
 
-- **RAUC** specific: whenever you want to build an update bundle:
+- **RAUC** specific: whenever you want to build an *update bundle*:
   ```
   gsoc-2024/build-torizon:
   $ bitbake update-bundle
   ```
   the result will be a file with extension `.raucb` inside the deployment directory (`deploy/images/<machine>/` (machine in the examples is `verdin-imx8mm`)). To learn about other bitbake targets, check the meta-rauc and meta-rauc-community documentation.
+
+- **SWUpdate** specific: whenever you want to build an *update image*:
+  ```
+  gsoc-2024/build-torizon:
+  $ bitbake swupdate-torizon-benchmark-image
+  ```
+  the result will be a file with extension `.swu` inside the deployment directory (`deploy/images/<machine>/` (machine in the examples is `verdin-imx8mm`)).
 
 ## Install OS image
 
@@ -169,7 +180,15 @@ Once the device is running Torizon OS, it can be updated as needed.
 
 ### Updates with SWUpdate
 
-TODO
+- On the device:
+  - To determine the device IP address:
+	```
+	$ ip a s
+	```
+- On the host/development machine:
+  - Access `http://<device-ip>:8080/` on a web browser.
+  - Drag and drop the `.swu` update file onto the page; after the upload, the device should reboot automatically on the new OS version.
+
 
 # General information about the OS images
 
@@ -188,8 +207,23 @@ TODO
 
 ## RAUC
 
-- RAUC documentation: https://rauc.readthedocs.io/en/latest/index.html
-- meta-rauc documentation: https://github.com/rauc/meta-rauc
+- RAUC documentation:
+  * https://rauc.readthedocs.io/en/latest/index.html
+- meta-rauc documentation:
+  * https://github.com/rauc/meta-rauc
 - meta-rauc-community documentation:
   * https://github.com/rborn-tx/meta-rauc-community/tree/rauc-toradex-6.5.0 (our fork of [drewmoseley/meta-rauc-community](https://github.com/drewmoseley/meta-rauc-community) having support for Toradex modules)
   * https://github.com/rauc/meta-rauc-community (upstream, without support for Toradex modules)
+
+## SWUpdate
+
+- SWUpdate documentation:
+  * https://sbabic.github.io/swupdate/index.html
+- meta-swupdate documentation:
+  * https://github.com/sbabic/meta-swupdate
+- meta-swupdate-boards documentation:
+  * https://github.com/rborn-tx/meta-swupdate-boards/tree/swupdate-toradex-6.5.0 (our fork of [drewmoseley/meta-swupdate-boards](https://github.com/drewmoseley/meta-swupdate-boards))
+  * https://github.com/sbabic/meta-swupdate-boards
+- Information on updating images from verified source:
+  * https://sbabic.github.io/swupdate/signed_images.html
+  * https://sbabic.github.io/swupdate/building-with-yocto.html#the-swupdate-class
